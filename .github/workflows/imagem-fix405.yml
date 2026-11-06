@@ -35,10 +35,10 @@ jobs:
           platforms: linux/amd64
           push: true
           build-args: |
-            VERSION=0.7.2-fix405
+            VERSION=0.7.2-fix405-2
           labels: |
             org.opencontainers.image.source=https://github.com/${{ github.repository }}
             org.opencontainers.image.description=Evolution Go 0.7.2 com a correcao do 405 client outdated
           tags: |
-            ${{ env.IMAGEM }}:0.7.2-fix405
+            ${{ env.IMAGEM }}:0.7.2-fix405-2
             ${{ env.IMAGEM }}:${{ github.sha }}
